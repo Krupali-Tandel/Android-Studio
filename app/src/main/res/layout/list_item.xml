@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+
+    <!--    making the view to show the image on the screen -->
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher" />
+
+    <!--    making the textview for the japanese words -->
+    <!--    grouping the views together -->
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:background="@color/category_number"
+        >
+
+        <TextView
+            android:id="@+id/list_miwok_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            tools:text="ichi"
+
+            />
+        <!--    making the textview for the default words -->
+        <TextView
+            android:id="@+id/default_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            tools:text="One" />
+    </LinearLayout>
+</LinearLayout>
